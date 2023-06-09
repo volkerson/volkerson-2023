@@ -4,3 +4,9 @@
 @use '../abstracts/functions' as func;
 @use '../abstracts/fonts' as font;
 @use '../abstracts/margins' as margin;
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}

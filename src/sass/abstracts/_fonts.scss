@@ -1,0 +1,15 @@
+// PPNeueMontreal Book 
+@font-face {
+    font-family: 'PPNM'; 
+    src: url('assets/fonts/PPNeueMontreal/PPNeueMontreal-Bookeot');
+    src: url('assets/fonts/PPNeueMontreal/PPNeueMontreal-Book.woff') 
+    format('woff'), 
+    url('assets/fonts/PPNeueMontreal/PPNeueMontreal-Book.ttf') 
+    format('truetype');
+    font-display: swap;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: "PPNM", Helvetica, Arial, sans-serif;
+}

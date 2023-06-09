@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "PPNM";
+  src: url("assets/fonts/PPNeueMontreal/PPNeueMontreal-Bookeot");
+  src: url("assets/fonts/PPNeueMontreal/PPNeueMontreal-Book.woff") format("woff"), url("assets/fonts/PPNeueMontreal/PPNeueMontreal-Book.ttf") format("truetype");
+  font-display: swap;
+}
+body {
+  font-size: 62.5%;
+  font-family: "PPNM", Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6,
+p,
+ul, li, dl, dt, dd,
+img {
+  margin: 0;
+  padding: 0;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+header {
+  background-color: #212121;
+  height: 100vh;
+}

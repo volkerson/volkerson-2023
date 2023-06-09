@@ -4,3 +4,8 @@
 @use '../abstracts/functions' as func;
 @use '../abstracts/fonts' as font;
 @use '../abstracts/margins' as margin;
+
+header {
+    background-color: color.$greyDark;
+    height: 100vh;
+}
