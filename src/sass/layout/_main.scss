@@ -99,20 +99,32 @@ main {
     margin: 0 0 121px 0;
 }
 
-.project__details {
+.project__details,
+.job-openining__details {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.project__details dl dt {
+.job-openining__details {
+    justify-content: flex-start;
+    margin: 79px 0 0 0;
+
+    &--role {
+        margin: 0 79px 0 0;
+    }
+}
+
+.project__details dl dt,
+.job-openining__details dl dt {
     text-transform: uppercase;
     font-size: 1.9em;
     color: color.$greyLight;
     margin: 0 0 29px 0;
 }
 
-.project__details dl dd {
+.project__details dl dd,
+.job-openining__details dl dd {
     font-size: 1.9em;
 }
 

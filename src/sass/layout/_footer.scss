@@ -8,4 +8,40 @@
 footer {
     background-color: color.$greyDark;
     height: 100vh;
+    padding: 0 79px 0 79px;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 57px;   
+    color: color.$white; 
+}
+
+.footer__grid-item {
+    padding: 29px 0 29px 0;
+}
+
+.footer__grid-item:nth-child(1) {
+    background-image: url(./assets/images/moose-footer.webp);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 75% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer__title,
+.footer__info {
+    width: 50%;
+}
+
+.footer__title {
+    color: color.$white;
+    margin: 179px 0 29px 0;
+    font-size: 3.7em;
+    line-height: 1.1em;
+    font-weight: 100;    
+}
+
+footer p.copyright {
+    text-align: center;
 }
