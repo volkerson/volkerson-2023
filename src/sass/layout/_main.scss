@@ -6,7 +6,7 @@
 @use '../abstracts/margins' as margin;
 
 main {
-    height: 1300px;
+    height: auto;
     background-color: color.$white;
 }
 
@@ -40,7 +40,43 @@ main {
     gap: 79px;;
 }
 
+/*
+ * PROJECTS
+*/
+
 .projects {
-    height: 500px;
-    background-color:grey;
+    /* no styles yet */
+}
+
+
+
+.scroll-container {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.single-project {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.single-project:nth-child(1) {
+    background-color: aqua;
+}
+
+.single-project:nth-child(2) {
+    background-color: orange;
+}
+
+.single-project:nth-child(3) {
+    background-color: orchid;
 }

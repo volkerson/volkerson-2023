@@ -33,3 +33,23 @@ for(let int = 0; int < typewriterText.length; int++) {
     }, 141 * (int + 1))
     
 }
+
+/*
+Horizontal scolling with GSAP
+*/
+
+gsap.registerPlugin(ScrollTrigger);
+
+const tl = gsap.timeline();
+
+tl.to(".project-container", 3, {x:-window.innerWidth});
+tl.to(".project-container", 3, {x:-window.innerWidth * 2});
+
+ScrollTrigger.create({
+    animation: tl,
+    trigger: ".project-container",
+    start: "center center",
+    end: "+=4000",
+    scrub: true,
+    pin: true
+});
