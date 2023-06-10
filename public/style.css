@@ -201,6 +201,18 @@ dl {
   font-family: "PPNM-Medium", Helvetica, Arial, sans-serif;
 }
 
+.invisible {
+  color: #212121;
+}
+
+.visible {
+  color: whitesmoke;
+}
+
+.cursorPosition {
+  border-left: 1px solid whitesmoke;
+}
+
 .page-container {
   display: flex;
   flex-direction: column;

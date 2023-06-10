@@ -1,0 +1,18 @@
+@use '../abstracts/icons' as icon;
+@use '../abstracts/colors' as color;
+@use '../abstracts/mixins' as mix;
+@use '../abstracts/functions' as func;
+@use '../abstracts/fonts' as font;
+@use '../abstracts/margins' as margin;
+
+.invisible {
+    color: color.$greyDark;   
+}
+
+.visible {
+    color: whitesmoke;
+}
+
+.cursorPosition {
+    border-left: 1px solid whitesmoke;
+}
