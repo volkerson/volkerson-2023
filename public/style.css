@@ -330,7 +330,8 @@ main {
   background-color: #F4F4F4;
 }
 
-.page-intro {
+.page-intro,
+.profile {
   height: auto;
   padding: 0 79px 121px 79px;
   display: grid;
@@ -338,10 +339,6 @@ main {
   gap: 57px;
 }
 
-/*
-.main__grid-item {
-    background-color: paleturquoise;
-}*/
 .main__grid-item h2 {
   margin: 179px 0 29px 0;
 }
@@ -447,6 +444,29 @@ main {
 
 .project__grid-item .row .btn {
   margin: 11px 0 0 0;
+}
+
+/*
+ * Profile
+ */
+.profile .main__grid-item:nth-child(3),
+.profile .main__grid-item:nth-child(4) {
+  padding: 179px 0 79px 0;
+}
+
+.profile ul {
+  margin: 21px 0 0 0;
+}
+
+.profile ul li {
+  background-image: url(./assets/images/list-bullet.png);
+  background-position: left 5px;
+  background-repeat: no-repeat;
+  background-size: 19px 14px;
+  font-size: 1.9em;
+  line-height: 1.1em;
+  margin: 0 0 13px 0;
+  padding: 0 0 0 35px;
 }
 
 footer {
