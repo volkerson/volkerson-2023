@@ -13,6 +13,9 @@ header {
     grid-template-columns: 2fr 1fr 1fr;
     gap: 57px;
 }
+header {
+    color: color.$white;
+}
 
 header img.page-logo {
     border: none;
@@ -27,6 +30,9 @@ header img.page-logo {
     background-position: bottom center;
     background-repeat: no-repeat;
     background-size: 600px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .header__grid-item h1 {
@@ -37,7 +43,16 @@ header img.page-logo {
     margin: 179px 0 29px 0;
 }
 
-header {
-    color: color.$white;
+
+.header__grid-item:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+}
+
+.header__metanav{
+    display: flex;
+    justify-content: flex-end;
 }
 

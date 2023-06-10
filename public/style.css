@@ -5,7 +5,7 @@
   font-display: swap;
 }
 @font-face {
-  font-family: "PPNM-Medim";
+  font-family: "PPNM-Medium";
   src: url("assets/fonts/PPNeueMontreal/PPNeueMontreal-Medium.eot");
   src: url("assets/fonts/PPNeueMontreal/PPNeueMontreal-Medium.woff") format("woff"), url("assets/fonts/PPNeueMontreal/PPNeueMontreal-Medium.ttf") format("truetype");
   font-display: swap;
@@ -20,6 +20,15 @@ p {
   line-height: 1.1em;
 }
 
+a,
+a:link,
+a:active,
+a:visited,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -31,6 +40,12 @@ ul, li, dl, dt, dd,
 img {
   margin: 0;
   padding: 0;
+}
+
+ul,
+dl {
+  list-style: none;
+  list-style-type: none;
 }
 
 /* width */
@@ -137,9 +152,55 @@ img {
   color: #212121;
 }
 
+/* page top button */
+.page-top {
+  width: 170px;
+  margin: 0;
+  background-color: #000;
+}
+
+.page-top:hover,
+.page-top:focus {
+  background-color: #F4F4F4;
+}
+
+.page-top:hover .btn__text-slide-up,
+.page-top:focus .btn__text-slide-up {
+  color: #000;
+}
+
 /* 
  * SOCIAL MEDIA LINKS 
  */
+.social-media-nav {
+  width: 100%;
+}
+
+.social-media-nav ul {
+  margin: 0px auto;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-media-nav ul li {
+  font-size: 1.7em;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.social-media-nav ul li a,
+.social-media-nav ul li a:link,
+.social-media-nav ul li a:active,
+.social-media-nav ul li a:visited {
+  color: #F4F4F4;
+}
+
+.social-media-nav ul li a:hover,
+.social-media-nav ul li a:focus {
+  font-family: "PPNM-Medium", Helvetica, Arial, sans-serif;
+}
+
 .page-container {
   display: flex;
   flex-direction: column;
@@ -155,6 +216,10 @@ header {
   gap: 57px;
 }
 
+header {
+  color: #F4F4F4;
+}
+
 header img.page-logo {
   border: none;
 }
@@ -168,6 +233,9 @@ header img.page-logo {
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: 600px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .header__grid-item h1 {
@@ -178,8 +246,16 @@ header img.page-logo {
   margin: 179px 0 29px 0;
 }
 
-header {
-  color: #F4F4F4;
+.header__grid-item:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: right;
+}
+
+.header__metanav {
+  display: flex;
+  justify-content: flex-end;
 }
 
 main {

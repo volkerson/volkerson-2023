@@ -11,7 +11,7 @@
 
 // PPNeueMontreal - Medium 
 @font-face {
-    font-family: 'PPNM-Medim'; 
+    font-family: 'PPNM-Medium'; 
     src: url('assets/fonts/PPNeueMontreal/PPNeueMontreal-Medium.eot');
     src: url('assets/fonts/PPNeueMontreal/PPNeueMontreal-Medium.woff') 
     format('woff'), 
@@ -28,4 +28,13 @@ body {
 p {
     font-size: 1.9em;
     line-height: 1.1em;
+}
+
+a,
+a:link,
+a:active,
+a:visited,
+a:hover,
+a:focus {
+    text-decoration: none;
 }
