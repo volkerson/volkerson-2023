@@ -164,7 +164,7 @@ dl {
   background-image: url(assets/images/arrow_to-right_black.png);
 }
 
-.light .btn__text-static {
+.intern.light .btn__text-static {
   background-image: url(assets/images/arrow_to-right_white.png);
 }
 
@@ -381,21 +381,10 @@ main {
   justify-content: space-around;
 }
 
-.single-project-wrapper:nth-child(1) {
-  background-color: white;
-}
-
-.single-project-wrapper:nth-child(2) {
-  background-color: rgb(195, 195, 195);
-}
-
-.single-project-wrapper:nth-child(3) {
-  background-color: white;
-}
-
 .single-project {
-  width: 100vw;
-  height: 100vh;
+  width: 96vw;
+  margin: 3vh 2vw 3vh 2vw;
+  height: 94vh;
   display: grid;
   grid-template-columns: 2fr 2fr;
   padding: 0 79px 0 79px;
