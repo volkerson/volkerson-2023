@@ -41,8 +41,7 @@
     background-color: transparent;    
     background-repeat: no-repeat;
     background-position-y: center;
-    background-position-x: calc(100% - 41px);
-    background-size: 39.5px 8px; 
+    background-position-x: calc(100% - 41px);    
 }
 
 
@@ -69,6 +68,19 @@
     left: 0;
 }
 
+/* background image size intern */
+.intern .btn__text-static,
+.intern .btn__text-slide-up  {
+    background-size: 39.5px 8px; 
+}
+
+/* background image size extern */
+.extern .btn__text-static,
+.extern .btn__text-slide-up  {
+    background-size: 24px 24px; 
+}
+
+
 
 /* styles for light, intern button */
 
@@ -91,6 +103,25 @@
 .light .btn__text-slide-up {
     color: color.$greyDark;          
 }
+
+
+/* styles for light, extern button */
+
+
+.light.extern:hover .btn__text-static {
+    background-image: icon.$icon-extern_black;
+}
+
+a .light {
+    color: color.$white;
+}
+
+.light .btn__text-static  {
+    background-image: icon.$icon-extern_white;
+}
+
+
+
 
 /* styles for dark, intern button */
 

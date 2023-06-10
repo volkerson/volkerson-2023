@@ -118,7 +118,6 @@ dl {
   background-repeat: no-repeat;
   background-position-y: center;
   background-position-x: calc(100% - 41px);
-  background-size: 39.5px 8px;
 }
 
 /* button with text that slides up */
@@ -144,6 +143,18 @@ dl {
   left: 0;
 }
 
+/* background image size intern */
+.intern .btn__text-static,
+.intern .btn__text-slide-up {
+  background-size: 39.5px 8px;
+}
+
+/* background image size extern */
+.extern .btn__text-static,
+.extern .btn__text-slide-up {
+  background-size: 24px 24px;
+}
+
 /* styles for light, intern button */
 .light .btn__background-color-slide-right {
   background-color: #F4F4F4;
@@ -163,6 +174,19 @@ dl {
 
 .light .btn__text-slide-up {
   color: #212121;
+}
+
+/* styles for light, extern button */
+.light.extern:hover .btn__text-static {
+  background-image: url(assets/images/icon-extern_black.png);
+}
+
+a .light {
+  color: #F4F4F4;
+}
+
+.light .btn__text-static {
+  background-image: url(assets/images/icon-extern_white.png);
 }
 
 /* styles for dark, intern button */
@@ -338,10 +362,6 @@ main {
 /*
  * PROJECTS
 */
-.projects {
-  /* no styles yet */
-}
-
 .scroll-container {
   position: relative;
   overflow-x: hidden;
@@ -352,7 +372,7 @@ main {
   flex-wrap: nowrap;
 }
 
-.single-project {
+.single-project-wrapper {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -361,16 +381,83 @@ main {
   justify-content: space-around;
 }
 
-.single-project:nth-child(1) {
-  background-color: aqua;
+.single-project-wrapper:nth-child(1) {
+  background-color: white;
 }
 
-.single-project:nth-child(2) {
-  background-color: orange;
+.single-project-wrapper:nth-child(2) {
+  background-color: rgb(195, 195, 195);
 }
 
-.single-project:nth-child(3) {
-  background-color: orchid;
+.single-project-wrapper:nth-child(3) {
+  background-color: white;
+}
+
+.single-project {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  padding: 0 79px 0 79px;
+  gap: 57px;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+
+.project-1 {
+  background-image: url(./assets/images/project-1-backgroundImage.webp);
+}
+
+.project-2 {
+  background-image: url(./assets/images/project-2-backgroundImage.webp);
+}
+
+.project-3 {
+  background-image: url(./assets/images/project-3-backgroundImage.webp);
+}
+
+.project__grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #F4F4F4;
+  padding: 79px 0 79px 0;
+}
+
+.project__title {
+  text-transform: uppercase;
+  font-size: 2.1em;
+  margin: 0 0 121px 0;
+}
+
+.project__details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project__details dl dt {
+  text-transform: uppercase;
+  font-size: 1.9em;
+  color: #646464;
+  margin: 0 0 29px 0;
+}
+
+.project__details dl dd {
+  font-size: 1.9em;
+}
+
+.project__details--description {
+  width: 211px;
+}
+
+.project__grid-item .row {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.project__grid-item .row .btn {
+  margin: 11px 0 0 0;
 }
 
 footer {

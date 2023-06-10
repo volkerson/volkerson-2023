@@ -44,11 +44,6 @@ main {
  * PROJECTS
 */
 
-.projects {
-    /* no styles yet */
-}
-
-
 
 .scroll-container {
     position: relative;
@@ -60,7 +55,7 @@ main {
     flex-wrap: nowrap;
 }
 
-.single-project {
+.single-project-wrapper {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -69,14 +64,82 @@ main {
     justify-content: space-around;
 }
 
-.single-project:nth-child(1) {
-    background-color: aqua;
+.single-project-wrapper:nth-child(1) {
+    background-color: white;
 }
 
-.single-project:nth-child(2) {
-    background-color: orange;
+.single-project-wrapper:nth-child(2) {
+    background-color: rgb(195, 195, 195);
 }
 
-.single-project:nth-child(3) {
-    background-color: orchid;
+.single-project-wrapper:nth-child(3) {
+    background-color: white;
+}
+
+.single-project {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    padding: 0 79px 0 79px;
+    gap: 57px;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+
+.project-1 {
+    background-image: url(./assets/images/project-1-backgroundImage.webp);    
+}
+
+.project-2 {
+    background-image: url(./assets/images/project-2-backgroundImage.webp);    
+}
+
+.project-3 {
+    background-image: url(./assets/images/project-3-backgroundImage.webp);    
+}
+
+.project__grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: color.$white;
+    padding: 79px 0 79px 0;
+}
+
+.project__title {
+    text-transform: uppercase;
+    font-size: 2.1em;
+    margin: 0 0 121px 0;
+}
+
+.project__details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project__details dl dt {
+    text-transform: uppercase;
+    font-size: 1.9em;
+    color: color.$greyLight;
+    margin: 0 0 29px 0;
+}
+
+.project__details dl dd {
+    font-size: 1.9em;
+}
+
+.project__details--description {
+    width: 211px;
+}
+
+.project__grid-item .row {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.project__grid-item .row .btn {
+    margin: 11px 0 0 0;
 }
