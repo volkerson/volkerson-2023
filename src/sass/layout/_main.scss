@@ -7,5 +7,40 @@
 
 main {
     height: 1300px;
-    background-color: teal;
+    background-color: color.$white;
+}
+
+.page-intro {
+    height: auto;
+    padding: 0 79px 121px 79px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 57px;
+}
+
+/*
+.main__grid-item {
+    background-color: paleturquoise;
+}*/
+
+.main__grid-item h2 {
+    margin: 179px 0 29px 0;
+}
+
+.reason h3 {
+    margin: 0 0 13px 0;
+}
+
+.page-intro .main__grid-item:nth-child(3),
+.page-intro .main__grid-item:nth-child(4) {
+    padding:  179px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 79px;;
+}
+
+.projects {
+    height: 500px;
+    background-color:grey;
 }

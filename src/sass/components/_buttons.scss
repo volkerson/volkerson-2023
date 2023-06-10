@@ -92,6 +92,28 @@
     color: color.$greyDark;          
 }
 
+/* styles for dark, intern button */
+
+.dark .btn__background-color-slide-right {
+    background-color: color.$greyDark;
+}
+
+.dark.intern:hover .btn__text-static {
+    background-image: icon.$icon-arrow_white;
+}
+
+.dark .btn__text-static  {
+    background-image: icon.$icon-arrow_black;
+}
+
+.dark {
+    border: 1px solid color.$greyDark;
+}
+
+.dark .btn__text-slide-up {
+    color: color.$white;          
+}
+
 /* page top button */
 .page-top {
     width: 170px;

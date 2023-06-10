@@ -30,6 +30,6 @@ for(let int = 0; int < typewriterText.length; int++) {
         }       
         animationStr = animationArr.join("");
         typeWriter.innerHTML = animationStr;
-    }, 200 * (int + 1))
+    }, 141 * (int + 1))
     
 }

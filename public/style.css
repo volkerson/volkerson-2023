@@ -15,6 +15,19 @@ body {
   font-family: "PPNM", Helvetica, Arial, sans-serif;
 }
 
+h1,
+h2 {
+  font-size: 3.7em;
+  line-height: 1.1em;
+  font-weight: 100;
+}
+
+h3 {
+  font-size: 2.9em;
+  line-height: 1.1em;
+  font-weight: 100;
+}
+
 p {
   font-size: 1.9em;
   line-height: 1.1em;
@@ -152,6 +165,27 @@ dl {
   color: #212121;
 }
 
+/* styles for dark, intern button */
+.dark .btn__background-color-slide-right {
+  background-color: #212121;
+}
+
+.dark.intern:hover .btn__text-static {
+  background-image: url(assets/images/arrow_to-right_white.png);
+}
+
+.dark .btn__text-static {
+  background-image: url(assets/images/arrow_to-right_black.png);
+}
+
+.dark {
+  border: 1px solid #212121;
+}
+
+.dark .btn__text-slide-up {
+  color: #F4F4F4;
+}
+
 /* page top button */
 .page-top {
   width: 170px;
@@ -251,10 +285,7 @@ header img.page-logo {
 }
 
 .header__grid-item h1 {
-  font-size: 3.7em;
-  line-height: 1.1em;
   color: #F4F4F4;
-  font-weight: 100;
   margin: 179px 0 29px 0;
 }
 
@@ -272,7 +303,41 @@ header img.page-logo {
 
 main {
   height: 1300px;
-  background-color: teal;
+  background-color: #F4F4F4;
+}
+
+.page-intro {
+  height: auto;
+  padding: 0 79px 121px 79px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 57px;
+}
+
+/*
+.main__grid-item {
+    background-color: paleturquoise;
+}*/
+.main__grid-item h2 {
+  margin: 179px 0 29px 0;
+}
+
+.reason h3 {
+  margin: 0 0 13px 0;
+}
+
+.page-intro .main__grid-item:nth-child(3),
+.page-intro .main__grid-item:nth-child(4) {
+  padding: 179px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 79px;
+}
+
+.projects {
+  height: 500px;
+  background-color: grey;
 }
 
 footer {
