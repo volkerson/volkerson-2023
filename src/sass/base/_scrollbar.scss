@@ -1,0 +1,27 @@
+@use '../abstracts/icons' as icon;
+@use '../abstracts/colors' as color;
+@use '../abstracts/mixins' as mix;
+@use '../abstracts/functions' as func;
+@use '../abstracts/fonts' as font;
+@use '../abstracts/margins' as margin;
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: color.$greyDark 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: color.$greyLight; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: color.$white; 
+  }

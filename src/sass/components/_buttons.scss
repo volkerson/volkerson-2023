@@ -5,7 +5,7 @@
 @use '../abstracts/fonts' as font;
 @use '../abstracts/margins' as margin;
 
-/* general buttons */
+/* general button settings */
 .btn {
     font-size: 1.7em;
     text-transform: uppercase; 
@@ -17,7 +17,6 @@
     cursor: pointer;
     overflow: hidden;
 }
-
 
 .btn__text-static,
 .btn__text-slide-up,
@@ -92,3 +91,10 @@
 .light .btn__text-slide-up {
     color: color.$greyDark;          
 }
+
+
+/* 
+ * SOCIAL MEDIA LINKS 
+ */
+
+ 

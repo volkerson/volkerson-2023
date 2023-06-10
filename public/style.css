@@ -1,7 +1,13 @@
 @font-face {
   font-family: "PPNM";
-  src: url("assets/fonts/PPNeueMontreal/PPNeueMontreal-Bookeot");
+  src: url("assets/fonts/PPNeueMontreal/PPNeueMontreal-Book.eot");
   src: url("assets/fonts/PPNeueMontreal/PPNeueMontreal-Book.woff") format("woff"), url("assets/fonts/PPNeueMontreal/PPNeueMontreal-Book.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PPNM-Medim";
+  src: url("assets/fonts/PPNeueMontreal/PPNeueMontreal-Medium.eot");
+  src: url("assets/fonts/PPNeueMontreal/PPNeueMontreal-Medium.woff") format("woff"), url("assets/fonts/PPNeueMontreal/PPNeueMontreal-Medium.ttf") format("truetype");
   font-display: swap;
 }
 body {
@@ -27,7 +33,27 @@ img {
   padding: 0;
 }
 
-/* general buttons */
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #212121;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #646464;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #F4F4F4;
+}
+
+/* general button settings */
 .btn {
   font-size: 1.7em;
   text-transform: uppercase;
@@ -111,6 +137,9 @@ img {
   color: #212121;
 }
 
+/* 
+ * SOCIAL MEDIA LINKS 
+ */
 .page-container {
   display: flex;
   flex-direction: column;

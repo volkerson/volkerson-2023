@@ -1,10 +1,21 @@
-// PPNeueMontreal Book 
+// PPNeueMontreal - Book 
 @font-face {
     font-family: 'PPNM'; 
-    src: url('assets/fonts/PPNeueMontreal/PPNeueMontreal-Bookeot');
+    src: url('assets/fonts/PPNeueMontreal/PPNeueMontreal-Book.eot');
     src: url('assets/fonts/PPNeueMontreal/PPNeueMontreal-Book.woff') 
     format('woff'), 
     url('assets/fonts/PPNeueMontreal/PPNeueMontreal-Book.ttf') 
+    format('truetype');
+    font-display: swap;
+}
+
+// PPNeueMontreal - Medium 
+@font-face {
+    font-family: 'PPNM-Medim'; 
+    src: url('assets/fonts/PPNeueMontreal/PPNeueMontreal-Medium.eot');
+    src: url('assets/fonts/PPNeueMontreal/PPNeueMontreal-Medium.woff') 
+    format('woff'), 
+    url('assets/fonts/PPNeueMontreal/PPNeueMontreal-Medium.ttf') 
     format('truetype');
     font-display: swap;
 }
