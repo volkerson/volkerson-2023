@@ -4,3 +4,8 @@
 @use '../abstracts/functions' as func;
 @use '../abstracts/fonts' as font;
 @use '../abstracts/margins' as margin;
+
+main {
+    height: 1300px;
+    background-color: teal;
+}

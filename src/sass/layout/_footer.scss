@@ -4,3 +4,8 @@
 @use '../abstracts/functions' as func;
 @use '../abstracts/fonts' as font;
 @use '../abstracts/margins' as margin;
+
+footer {
+    background-color: color.$greyDark;
+    height: 100vh;
+}

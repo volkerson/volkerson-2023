@@ -9,6 +9,11 @@ body {
   font-family: "PPNM", Helvetica, Arial, sans-serif;
 }
 
+p {
+  font-size: 1.9em;
+  line-height: 1.1em;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -22,6 +27,90 @@ img {
   padding: 0;
 }
 
+/* general buttons */
+.btn {
+  font-size: 1.7em;
+  text-transform: uppercase;
+  width: 219px;
+  height: 41px;
+  border-radius: 41px;
+  margin: 79px 0 0 0;
+  background: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.btn__text-static,
+.btn__text-slide-up,
+.btn__background-color-slide-right {
+  height: 41px;
+  border-radius: 41px;
+  position: relative;
+}
+
+.btn__text-static,
+.btn__text-slide-up {
+  width: 178px;
+  padding: 0 0 0 41px;
+  display: flex;
+  align-items: center;
+  top: 0;
+  left: 0;
+}
+
+.btn__text-static {
+  z-index: 10;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: calc(100% - 41px);
+  background-size: 39.5px 8px;
+}
+
+/* button with text that slides up */
+.btn__text-slide-up {
+  transition: top 310ms;
+  z-index: 20;
+}
+
+.btn:hover .btn__text-slide-up {
+  top: -41px;
+}
+
+/* button with backgroundColor that slides in from the left */
+.btn__background-color-slide-right {
+  width: 219px;
+  left: -220px;
+  top: -82px;
+  z-index: 1;
+  transition: left 300ms;
+}
+
+.btn:hover .btn__background-color-slide-right {
+  left: 0;
+}
+
+/* styles for light, intern button */
+.light .btn__background-color-slide-right {
+  background-color: #F4F4F4;
+}
+
+.light.intern:hover .btn__text-static {
+  background-image: url(assets/images/arrow_to-right_black.png);
+}
+
+.light .btn__text-static {
+  background-image: url(assets/images/arrow_to-right_white.png);
+}
+
+.light {
+  border: 1px solid #F4F4F4;
+}
+
+.light .btn__text-slide-up {
+  color: #212121;
+}
+
 .page-container {
   display: flex;
   flex-direction: column;
@@ -29,6 +118,47 @@ img {
 }
 
 header {
+  background-color: #212121;
+  height: 100vh;
+  padding: 0 79px 0 79px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 57px;
+}
+
+header img.page-logo {
+  border: none;
+}
+
+.header__grid-item {
+  padding: 29px 0 29px 0;
+}
+
+.header__grid-item:nth-child(1) {
+  background-image: url(./assets/images/moose-header.webp);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: 600px auto;
+}
+
+.header__grid-item h1 {
+  font-size: 3.7em;
+  line-height: 1.1em;
+  color: #F4F4F4;
+  font-weight: 100;
+  margin: 179px 0 29px 0;
+}
+
+header {
+  color: #F4F4F4;
+}
+
+main {
+  height: 1300px;
+  background-color: teal;
+}
+
+footer {
   background-color: #212121;
   height: 100vh;
 }

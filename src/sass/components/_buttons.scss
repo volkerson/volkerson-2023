@@ -4,3 +4,91 @@
 @use '../abstracts/functions' as func;
 @use '../abstracts/fonts' as font;
 @use '../abstracts/margins' as margin;
+
+/* general buttons */
+.btn {
+    font-size: 1.7em;
+    text-transform: uppercase; 
+    width: 219px;
+    height: 41px;
+    border-radius: 41px;    
+    margin: 79px 0 0 0;
+    background: none;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+
+.btn__text-static,
+.btn__text-slide-up,
+.btn__background-color-slide-right  {
+    height: 41px;
+    border-radius: 41px;  
+    position: relative;
+}
+
+.btn__text-static,
+.btn__text-slide-up {
+    width: calc(219px - 41px);
+    padding: 0 0 0 41px;    
+    display: flex;
+    align-items: center;  
+    top: 0;
+    left: 0;     
+}
+
+.btn__text-static {
+    z-index: 10;
+    background-color: transparent;    
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: calc(100% - 41px);
+    background-size: 39.5px 8px; 
+}
+
+
+/* button with text that slides up */
+.btn__text-slide-up {         
+    transition: top 310ms;
+    z-index: 20;
+}
+
+.btn:hover .btn__text-slide-up {
+    top: -41px;
+}
+
+/* button with backgroundColor that slides in from the left */
+.btn__background-color-slide-right {
+    width: 219px;    
+    left: -220px;
+    top: -82px;
+    z-index: 1; 
+    transition: left 300ms;
+}
+
+.btn:hover .btn__background-color-slide-right {
+    left: 0;
+}
+
+
+/* styles for light, intern button */
+
+.light .btn__background-color-slide-right {
+    background-color: color.$white;
+}
+
+.light.intern:hover .btn__text-static {
+    background-image: icon.$icon-arrow_black;
+}
+
+.light .btn__text-static  {
+    background-image: icon.$icon-arrow_white;
+}
+
+.light {
+    border: 1px solid color.$white;
+}
+
+.light .btn__text-slide-up {
+    color: color.$greyDark;          
+}

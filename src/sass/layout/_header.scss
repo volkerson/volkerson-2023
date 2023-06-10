@@ -8,4 +8,36 @@
 header {
     background-color: color.$greyDark;
     height: 100vh;
+    padding: 0 79px 0 79px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 57px;
 }
+
+header img.page-logo {
+    border: none;
+}
+
+.header__grid-item {
+    padding: 29px 0 29px 0;
+}
+
+.header__grid-item:nth-child(1) {
+    background-image: url(./assets/images/moose-header.webp);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 600px auto;
+}
+
+.header__grid-item h1 {
+    font-size: 3.7em;
+    line-height: 1.1em;
+    color: color.$white;
+    font-weight: 100;
+    margin: 179px 0 29px 0;
+}
+
+header {
+    color: color.$white;
+}
+
