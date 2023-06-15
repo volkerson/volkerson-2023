@@ -6,42 +6,67 @@
 @use '../abstracts/margins' as margin;
 
 footer {
-    background-color: color.$greyDark;
     height: 100vh;
     padding: 0 79px 0 79px;
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    gap: 57px;   
-    color: color.$white; 
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    color: color.$white;
+    background-color: color.$greyDark;
 }
 
-.footer__grid-item {
-    padding: 29px 0 29px 0;
+.footer--main {
+    width: 40%;
+    height: 100%;
 }
 
-.footer__grid-item:nth-child(1) {
-    background-image: url(./assets/images/moose-footer.webp);
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    background-size: 75% auto;
+.footer--visual {
+    width: 60%;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
+    background-image: url(./assets/images/moose2.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: auto 79%;
+}
+
+.footer--title {
+    margin: 157px 0 0 0;
+    width: 89%;
+}
+
+.footer--title p {
+    font-size: 3.7em;
+}
+
+.footer--text {
+    margin: 57px 0 0 0;
+    width: 89%;
+}
+
+.footer--lists {
+    margin: 57px 0 57px 0;
+    width: 89%;
+    display: flex;
     justify-content: space-between;
 }
 
-.footer__title,
-.footer__info {
-    width: 50%;
+.footer--lists dl dt {
+    text-transform: uppercase;
+    font-size: 1.9em;
+    color: color.$greyLight;
+    margin: 0 0 29px 0;
 }
 
-.footer__title {
-    color: color.$white;
-    margin: 179px 0 29px 0;
-    font-size: 3.7em;
-    line-height: 1.1em;
-    font-weight: 100;    
+.footer--lists dl dd {
+    font-size: 1.9em;
 }
 
-footer p.copyright {
+.footer--visual p {
+    width: 100%;
     text-align: center;
+    padding:  0 0 19px 0;
 }
+

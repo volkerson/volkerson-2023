@@ -12,7 +12,6 @@
     width: 219px;
     height: 41px;
     border-radius: 41px;    
-    margin: 79px 0 0 0;
     background: none;
     cursor: pointer;
     overflow: hidden;
@@ -168,32 +167,22 @@ a .light {
  * SOCIAL MEDIA LINKS 
  */
 
- .social-media-nav {
-    width: 100%;
-}
 
-.social-media-nav ul {
-    margin: 0px auto;
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-}
-
- .social-media-nav ul li {
-    font-size: 1.7em;
+ .page-header--main--nav__social ul li {
+    font-size: 1.5em;
     vertical-align: middle;
     text-transform: uppercase;
  }
 
 
-.social-media-nav  ul li a,
-.social-media-nav  ul li a:link,
-.social-media-nav  ul li a:active,
-.social-media-nav  ul li a:visited {
+ .page-header--main--nav__social  ul li a,
+ .page-header--main--nav_social ul li a:link,
+ .page-header--main--nav_social ul li a:active,
+ .page-header--main--nav_social ul li a:visited {
     color: color.$white;
 }
 
-.social-media-nav  ul li a:hover,
-.social-media-nav  ul li a:focus {
+ .page-header--main--nav_social ul li a:hover,
+ .page-header--main--nav_social ul li a:focus {
     font-family: "PPNM-Medium", Helvetica, Arial, sans-serif;
 }

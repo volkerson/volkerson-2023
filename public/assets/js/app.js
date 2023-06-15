@@ -38,6 +38,7 @@ for(let int = 0; int < typewriterText.length; int++) {
 Horizontal scolling with GSAP
 */
 
+
 gsap.registerPlugin(ScrollTrigger);
 
 const tl = gsap.timeline();

@@ -6,50 +6,84 @@
 @use '../abstracts/margins' as margin;
 
 header {
-    background-color: color.$greyDark;
     height: 100vh;
     padding: 0 79px 0 79px;
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    gap: 57px;
+    color: color.$white;
+    background-color: color.$greyDark;
 }
-header {
+
+.herobox--header {
+    margin: 29px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.herobox--header a {
     color: color.$white;
 }
 
-header img.page-logo {
-    border: none;
+.herobox--main {
+    height: calc(100% - (41px + 29px));
+    display: flex;
+    flex-direction: row-reverse;
 }
 
-.header__grid-item {
-    padding: 29px 0 29px 0;
-}
 
-.header__grid-item:nth-child(1) {
+.herobox--main--visual {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     background-image: url(./assets/images/moose-header.webp);
-    background-position: bottom center;
     background-repeat: no-repeat;
-    background-size: 600px auto;
+    background-position: bottom center;
+    background-size: 90% auto;
+}
+
+.herobox--main--content  {
+    width: 50%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-}
-
-.header__grid-item h1 {
-    color: color.$white;
-    margin: 179px 0 29px 0;
-}
-
-
-.header__grid-item:nth-child(3) {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: right;
-}
-
-.header__metanav{
-    display: flex;
     justify-content: flex-end;
 }
 
+
+.herobox--title,
+.herobox--text {
+    width: 65%;
+}
+
+
+.herobox--text {
+    margin: 29px 0 0 0;
+}
+
+.herobox--button {
+    margin: 57px 0 0 0;
+}
+
+.herobox--copyright {
+    margin: 179px 0 0 0;
+    text-align: right;
+    padding: 0 0 19px 0;
+}
+
+.herobox--links {
+    width: 70%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.herobox--links li {
+    width: 100%;
+    font-size: 1.7em;
+    padding: 0 0 19px 0;
+}
+
+.herobox--links li a {
+    color: color.$white;
+}
