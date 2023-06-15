@@ -8,6 +8,49 @@
 @media screen and (orientation: portrait),
 (orientation: landscape) and (max-width: 900px) and (max-height: 600px) {
 
+    // Buttons
+
+
+    // general
+
+    .btn__text-slide-up,
+    .btn__background-color-slide-right {
+        display: none;
+    }
+
+    // light  
+    .light .btn__text-static {
+        color: color.$greyDark;
+        background-color: color.$white;
+    }
+
+    // dark  
+    .dark .btn__text-static {
+        color: color.$white;
+        background-color: color.$greyDark;
+    }
+
+    // icons
+
+    .light.intern .btn__text-static {
+        background-image: icon.$icon-arrow_black;
+    }
+
+    .light.extern .btn__text-static {
+        background-image: icon.$icon-extern_black;
+    }      
+
+    .dark.intern .btn__text-static {
+        background-image: icon.$icon-arrow_white;
+    }  
+    
+    .dark.extern .btn__text-static {
+        background-image: icon.$icon-extern_white;
+    }
+
+   
+
+
     // Header
 
 

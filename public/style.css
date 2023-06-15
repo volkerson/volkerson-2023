@@ -605,6 +605,30 @@ footer {
 }
 
 @media screen and (orientation: portrait), (orientation: landscape) and (max-width: 900px) and (max-height: 600px) {
+  .btn__text-slide-up,
+  .btn__background-color-slide-right {
+    display: none;
+  }
+  .light .btn__text-static {
+    color: #212121;
+    background-color: #F4F4F4;
+  }
+  .dark .btn__text-static {
+    color: #F4F4F4;
+    background-color: #212121;
+  }
+  .light.intern .btn__text-static {
+    background-image: url(assets/images/arrow_to-right_black.png);
+  }
+  .light.extern .btn__text-static {
+    background-image: url(assets/images/icon-extern_black.png);
+  }
+  .dark.intern .btn__text-static {
+    background-image: url(assets/images/arrow_to-right_white.png);
+  }
+  .dark.extern .btn__text-static {
+    background-image: url(assets/images/icon-extern_white.png);
+  }
   header,
   footer {
     height: auto;
